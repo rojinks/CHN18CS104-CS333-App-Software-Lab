@@ -5,6 +5,8 @@
 /* Experiment 4: mySQL Commands
 /* --------------------------------------------------------------- */
 
+USE applab;
+
 CREATE TABLE Department(
           Code INT PRIMARY KEY NOT NULL,
           Title VARCHAR(30),
