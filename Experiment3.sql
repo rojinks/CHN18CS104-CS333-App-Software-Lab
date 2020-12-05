@@ -5,6 +5,8 @@
 /* Experiment 3: mySQL Commands
 /* ----------------------------------------------------------------------------------- */
 
+USE applab;
+
 CREATE TABLE Employee(
           eid CHAR(4),
           ename CHAR(30) NOT NULL,
