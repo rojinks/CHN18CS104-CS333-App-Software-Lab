@@ -5,6 +5,8 @@
 /* Experiment 1: mySQL Commands */
 /* ------------------------------------------------------------- */
 
+USE applab;
+
 CREATE TABLE Student(
     Sno INT NOT NULL PRIMARY KEY,
     Name VARCHAR(50) NOT  NULL,
