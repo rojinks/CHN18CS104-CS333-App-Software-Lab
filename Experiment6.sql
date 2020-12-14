@@ -5,7 +5,7 @@
 /* Experiment 6: Creation of views and assertions
 /* ------------------------------------------------------------------------------- */
 
-USE lab;
+USE applab;
 
 CREATE TABLE Store (
     order_no INT PRIMARY KEY,
