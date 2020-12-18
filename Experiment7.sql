@@ -8,26 +8,27 @@
 USE applab;
 
 CREATE TABLE Store (
-    order_no INT PRIMARY KEY,
-    code VARCHAR(5),
-    item VARCHAR(50),
-    quantity INT,
-    price FLOAT(10,2),
-    discount FLOAT,
-    mrp FLOAT(10,2)
+        OrderNo INT PRIMARY KEY,
+        Code VARCHAR(5),
+        Item VARCHAR(50),
+        Quantity INT,
+        Price FLOAT(10,2),
+        Discount FLOAT,
+        MRP FLOAT(10,2)
 );
 
-INSERT INTO Store VALUES(001,'A001', 'Soap dish', 10, 45.00, 10.0, 50.00);
-INSERT INTO Store VALUES(002,'B001', 'Stainless Pan', 22, 160.00, 20.0, 200.00);
-INSERT INTO Store VALUES(003,'A002', 'Shampoo', 15, 270.00, 10.0, 300.00);
-INSERT INTO Store VALUES(004,'C001', 'Spoon', 10, 71.25, 5.0, 75.00);
+INSERT INTO Store VALUES
+        (001,'A01', 'Ryzen 5 3550H', 15, 45.00, 10.0, 55.00),
+        (002,'B01', 'GTX 1650', 10, 160.00, 20.0, 180.00),
+        (003,'A02', 'Intel i5 9300H', 10, 270.00, 10.0, 280.00),
+        (004,'C01', 'ROG Strix B450-F', 20, 250.00, 5.0, 255.00);
 
 SELECT * FROM Store;
 
-SELECT MOD(price, 9) FROM Store;
+SELECT MOD(Price, 9) FROM Store;
 
-SELECT price, POWER(price, 2) FROM Store;
+SELECT price, POWER(Price, 2) FROM Store;
 
-SELECT ROUND(price / 7, 0) FROM Store;
+SELECT ROUND(Price / 7, 0) FROM Store;
 
 /* -------------------------------------------------------------------------------- */
