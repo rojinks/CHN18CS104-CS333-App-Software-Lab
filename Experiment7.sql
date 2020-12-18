@@ -1,3 +1,10 @@
+/* CHN18CS104 */
+/* Rojin K Sunny */
+/* CS C 51 */
+/* ------------------------------------------------------------------------------- */
+/* Experiment 7: Implementation of built-in functions in RDBMS
+/* ------------------------------------------------------------------------------- */
+
 USE applab;
 
 CREATE TABLE Store (
@@ -22,3 +29,5 @@ SELECT MOD(price, 9) FROM Store;
 SELECT price, POWER(price, 2) FROM Store;
 
 SELECT ROUND(price / 7, 0) FROM Store;
+
+/* -------------------------------------------------------------------------------- */
